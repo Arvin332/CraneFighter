@@ -4655,7 +4655,7 @@ MonoBehaviour:
   baseAT: 1
   hpPerLevel: 2
   atPerXLevel: 3
-  monsterAnimator: {fileID: 0}
+  monsterAnimator: {fileID: 1573800148}
 --- !u!114 &1573800147
 MonoBehaviour:
   m_ObjectHideFlags: 0
