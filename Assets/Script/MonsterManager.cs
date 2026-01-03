@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,9 @@ public class MonsterManager : MonoBehaviour
     [Header("Scaling")]
     public int hpPerLevel = 2;
     public int atPerXLevel = 3;
+
+    [Header("Animator")]
+    public Animator monsterAnimator;
 
     void Start()
     {
@@ -52,7 +56,14 @@ public class MonsterManager : MonoBehaviour
             ballSpawner.SpawnBatch();
             ballSpawner.RefreshBall = false;
         }
+        monsterAnimator.SetTrigger("MonsterAttack");
+        StartCoroutine(HoldAnimation(2f));
 
         player.TakeDamage(stats.AT);
+    }
+
+    IEnumerator HoldAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }

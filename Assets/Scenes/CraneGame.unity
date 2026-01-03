@@ -555,6 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   HP: 4
   AT: 1
+  animator: {fileID: 1573800148}
   stunned: 0
 --- !u!4 &65304096
 Transform:
@@ -2512,6 +2513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   HP: 4
   AT: 1
+  animator: {fileID: 0}
   stunned: 0
 --- !u!1 &920141991
 GameObject:
@@ -4604,7 +4606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300002, guid: c3a0ffcab94f86043aa02beca70d680b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4653,6 +4655,7 @@ MonoBehaviour:
   baseAT: 1
   hpPerLevel: 2
   atPerXLevel: 3
+  monsterAnimator: {fileID: 0}
 --- !u!114 &1573800147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4667,6 +4670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterStats
   HP: 4
   AT: 1
+  animator: {fileID: 1573800148}
   stunned: 0
 --- !u!95 &1573800148
 Animator:
