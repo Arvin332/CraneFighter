@@ -48,6 +48,7 @@ public class MonsterManager : MonoBehaviour
         if (stats.stunned)
         {
             stats.stunned = false;
+            AudioManager.Instance.PlaySFX(SFXType.Stun);
             return;
         }
 
@@ -57,7 +58,7 @@ public class MonsterManager : MonoBehaviour
             ballSpawner.RefreshBall = false;
         }
         monsterAnimator.SetTrigger("MonsterAttack");
-        StartCoroutine(HoldAnimation(2f));
+        StartCoroutine(HoldAnimation(1f));
 
         player.TakeDamage(stats.AT);
     }

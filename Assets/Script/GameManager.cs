@@ -78,8 +78,8 @@ IEnumerator EndPlayerTurnRoutine()
     currentLevel++;
 
     monster.RandomizeMonster(currentLevel);
-
     uiStatBinder.UpdateLevel(currentLevel);
+    AudioManager.Instance.PlaySFX(SFXType.LevelUp);
 }
 
     public void GameOver()
@@ -96,9 +96,6 @@ IEnumerator EndPlayerTurnRoutine()
 
     void ApplyBallEffect(Ball ball)
     {
-        Debug.Log($"Ball: {ball}");
-        Debug.Log($"PlayerStats: {player}");
-        Debug.Log($"MonsterStats: {monster.stats}");
         switch (ball.type)
     {
         case BallType.Attack:

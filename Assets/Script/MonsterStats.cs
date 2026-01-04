@@ -21,13 +21,15 @@ public class MonsterStats : MonoBehaviour
         {
             animator.SetTrigger("MonsterHurt");
             StartCoroutine(HoldAnimation(1f));
+            AudioManager.Instance.PlaySFX(SFXType.Hit);
         }
 
         if (HP == 0)
     {
         GameManager.Instance.OnMonsterDefeated();
         animator.SetTrigger("MonsterDead");
-        StartCoroutine(HoldAnimation(2f));
+        StartCoroutine(HoldAnimation(1f));
+        AudioManager.Instance.PlaySFX(SFXType.Hit);
     }
 
     }

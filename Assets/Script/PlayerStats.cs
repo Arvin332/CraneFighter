@@ -19,10 +19,12 @@ public class PlayerStats : MonoBehaviour
         HP -= dmg;
         HP = Mathf.Max(0, HP);
         OnStatsChanged?.Invoke();
+        AudioManager.Instance.PlaySFX(SFXType.Hit);
 
         if (HP == 0)
     {
         GameManager.Instance.GameOver();
+        AudioManager.Instance.PlaySFX(SFXType.GameOver);
     }
     }
 
