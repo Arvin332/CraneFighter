@@ -48,6 +48,7 @@ public class MonsterManager : MonoBehaviour
         if (stats.stunned)
         {
             stats.stunned = false;
+            monsterAnimator.SetTrigger("MonsterHurt");
             AudioManager.Instance.PlaySFX(SFXType.Stun);
             return;
         }

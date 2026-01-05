@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class HelpManager : MonoBehaviour
@@ -8,12 +9,16 @@ public class HelpManager : MonoBehaviour
 
     public void OpenHelp()
     {
+        AudioManager.Instance.PlaySFX(SFXType.Click);
+        StartCoroutine(HoldAnimation(0.5f));
         helpPanel.SetActive(true);
         isOpen = true;
     }
 
     public void CloseHelp()
     {
+        AudioManager.Instance.PlaySFX(SFXType.Click);
+        StartCoroutine(HoldAnimation(0.5f));
         helpPanel.SetActive(false);
         isOpen = false;
     }
@@ -22,5 +27,10 @@ public class HelpManager : MonoBehaviour
     {
         isOpen = !isOpen;
         helpPanel.SetActive(isOpen);
+    }
+
+    IEnumerator HoldAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }

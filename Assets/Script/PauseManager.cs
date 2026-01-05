@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PauseManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class PauseManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            AudioManager.Instance.PlaySFX(SFXType.Click);
+            StartCoroutine(HoldAnimation(0.5f));
             TogglePause();
         }
     }
@@ -32,5 +35,10 @@ public class PauseManager : MonoBehaviour
         isPaused = false;
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
+    }
+
+    IEnumerator HoldAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }

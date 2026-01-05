@@ -6,4 +6,5 @@ public enum SFXType
     LevelUp,
     GameOver,
     Stun,
+    Click,
 }

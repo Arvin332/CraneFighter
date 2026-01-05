@@ -742,7 +742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.16815, y: 43.148483}
+  m_AnchoredPosition: {x: 34.2, y: 81.9}
   m_SizeDelta: {x: 174.6688, y: 72.8304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321010149
@@ -1092,8 +1092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: -43}
-  m_SizeDelta: {x: 160, y: 49.6032}
+  m_AnchoredPosition: {x: 21, y: -25}
+  m_SizeDelta: {x: 174.78, y: 79.162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451556091
 MonoBehaviour:
@@ -2777,7 +2777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.16815, y: 82.013275}
+  m_AnchoredPosition: {x: 36.6, y: 12.1}
   m_SizeDelta: {x: 174.6688, y: 72.8304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054943623
@@ -2800,8 +2800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gunakan tombol -> dan <- untuk menggerakan cakar dan Enter untuk mengambil
-    bola
+  m_text: Tekan tombol "esc" untuk pause game dan membuka instruksi kontrol game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2810,8 +2809,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3152,7 +3151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.740234, y: 12.640442}
+  m_AnchoredPosition: {x: 35.740234, y: 52.3}
   m_SizeDelta: {x: 174.6688, y: 72.8304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091455451
@@ -3184,8 +3183,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291677645
-  m_fontColor: {r: 0.8039216, g: 0.8039216, b: 0.8039216, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3965,8 +3964,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: 92}
-  m_SizeDelta: {x: 160, y: 49.6032}
+  m_AnchoredPosition: {x: 21, y: 86}
+  m_SizeDelta: {x: 174.7795, y: 79.162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424746101
 MonoBehaviour:
